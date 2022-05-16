@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background-color: lightgray;
+}
+
+.homepage .navbar{
+    /* position: fixed; */
+    position: relative;
+    background-color: #9d004e;
+    overflow: hidden;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    
+}
+
+.homepage .navbar a{
+    
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.homepage .navbar .mylogo{
+    width: 15%;
+    height: 50px;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+    position: relative;
+}
+
+.homepage .navbar .miniprofileimagelink{
+    height: 50px;
+}
+.homepage .navbar .miniprofileimage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+.post{
+    width: 100%;
+    background-color: #e9967a45;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.post .post-top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* margin: 10px; */
+}
+.post .post-top .post-content{
+    width: 100%;
+    min-height: 10px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    flex: 1;
+    background-color: #eee;
+    margin-left: 10px;
+}
+.post .post-bottom .post-button{
+    width: 10%;
+    margin-top:0;
+    height: 30px;
+    border: 2px solid #9d004e;
+    border-radius: 25px;
+    color:#9d004e
+}
+.post .post-bottom .post-button:hover{
+    background-color: #ddd;
+}
+
+.post .post-top .profile1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+}
+.post .post-top .dp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.post .post-top .dp > img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.post .post-top .post-info{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.post .post-top .post-info .name1{
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+}
+.post .post-top .post-info .time1{
+    cursor: pointer;
+    font-size: 12px;
+
+}
+.post .post-top i{
+    margin-left: auto;
+    cursor: pointer;
+}
+.post .post-content{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+}
+.post .post-content > img{
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.post .post-bottom{
+    box-shadow: 1px solid #ddd;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px;
+}
+
+.post .post-bottom .action{
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.post .post-bottom .action:hover{
+    background: #ddd;
+}
+
+.post .post-bottom > .action{
+    color: #9d004e;
+}
+
+.textofcomment{
+    width: 100%;
+    border-color: #fff;
+    outline: 0;
+    font-size: small;
+    font-weight: 900;
+}
+
+.comment-textarea .comment-content{
+    width: 100%;
+    min-height: 1px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #eee;
+    margin-left: 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top:5px;
+}
+
+
+
+.comment-textarea .post-button{
+    position: relative;
+    float:right;
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    border: 2px solid #9d004e;
+    border-radius: 25px;
+    color:#9d004e;
+
+}
+.comment-textarea .post-button:hover{
+    background-color: #ddd;
+}
+
+.pagination{
+    width:100%;
+    float: center;
+    position: relative;
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination   li{
+    display: inline-block;
+    margin: 5px;
+    
+
+}
+
+.pagination li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 25px;
+    box-shadow:0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.pagination .page-link{
+    border-radius:50%;
+    margin:5px;
+}
+
+.previous-page, .next-page{
+    background: #9d004e;
+    width:65px;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.previous-page:hover{
+    transform: translateX(-5px);
+}
+.next-page:hover{
+    transform: translateX(-5px);
+}
+.current-page .dots{
+    background: #ddd;
+    width:45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active{
+    background: #9d004e;
+}
+
+
+.about .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+.about .card-body {
+    padding: 20px;
+}
+.about .navbar {
+    background-color: #9d004e;
+    overflow: hidden;
+    width: 100%; 
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.about .navbar a{
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about .navbar .mylogo{
+    width: 15%;
+    height: 50px;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+    position: relative;
+
+}
+.about .navbar .miniprofileimagelink{
+    height: 50px;
+}
+.about .navbar .miniprofileimage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.about .sidebar {
+    background-color: #333;
+    color: white;
+    height: 100%;
+}
+
+
+
+.about .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px
+}
+.about .card .about{
+    text-align: left;
+}
+.about .content {
+    background-color: whitesmoke;
+}
+
+.about .like-counter{
+    float: left;
+}
+
+.about .like-counter .like-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.about .comment-counter{
+    float: right;
+}
+
+.about .comment-counter .comment-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profilepost .navbar {
+    background-color: #9d004e;
+    overflow: hidden;
+    width: 100%; 
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.profilepost .navbar a{
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.profilepost .navbar .mylogo{
+    width: 15%;
+    height: 50px;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+    position: relative;
+
+}
+
+.profilepost .navbar .miniprofileimagelink{
+    height: 50px;
+}
+.profilepost .navbar .miniprofileimage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.profilepost .coverarea{
+    width: 100%;
+    min-height: 300px;
+}
+
+.profilepost .coverarea .box{
+    position: relative;
+    padding: 0px 150px 0px 150px;
+    width: 100%;
+    min-height: 150px;
+    margin-top: 90px;
+    text-align: center;
+    top: 100px;
+}
+.profilepost .coverarea .box .profilepic{
+    position: relative;
+    width: 150px;
+    min-height: 150px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.profilepost .coverarea .changepic >a{
+    background-color: lightgray;
+    padding: 2px;
+    border-radius: 10px;
+}
+.profilepost .coverarea .changepic{
+    width: 150px;
+    border-left: 20px;
+    position: relative;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.profilepost .coverarea .profilename{
+    width: 150px;
+    position: relative;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    color: inherit;
+}
+.profilepost .postarea{
+    margin-top: 100px;
+}
+
+
